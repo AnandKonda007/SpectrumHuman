@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+
+        <RelativeLayout
+            android:id="@+id/rlone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/edit_cell">
+
+
+            <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                android:id="@+id/textone"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:paddingLeft="10dp"
+                android:paddingTop="13dp"
+                android:text="@string/name"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+            <com.example.wave.spectrumhuman.FONTS.EditTextFontStyle
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/textone"
+
+                android:background="@android:color/transparent"
+                android:paddingLeft="3dp"
+                android:singleLine="true" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rltwo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/edit_cell">
+
+            <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                android:id="@+id/texttwo"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:paddingLeft="10dp"
+                android:paddingTop="13dp"
+                android:text="@string/email"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+            <com.example.wave.spectrumhuman.FONTS.EditTextFontStyle
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+
+                android:layout_toEndOf="@+id/texttwo"
+                android:background="@android:color/transparent"
+                android:paddingLeft="3dp"
+
+                android:singleLine="true" />
+
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:id="@+id/ScrollView_register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:layout_below="@+id/rltwo"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="59dp">
+
+            <LinearLayout
+                android:id="@+id/LinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rltwo"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/l_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rltwo"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlthree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rltwo"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="50dp">
+
+                        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                            android:id="@+id/message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/message"
+                            android:textSize="18sp" />
+
+                        <com.example.wave.spectrumhuman.FONTS.EditTextFontStyle
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_below="@id/message"
+                            android:layout_marginTop="20dp"
+                            android:background="#dbe1f1"
+                            android:gravity="start"
+                            android:imeOptions="actionNext"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="2dp" />
+
+
+
+
+                    </RelativeLayout>
+                    <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+                        android:id="@+id/submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_marginTop="120dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="@string/submit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

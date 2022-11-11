@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:id="@+id/text_reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Alert"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            />
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="60dp"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/removeuser"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorWhite"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+                    android:id="@+id/btn_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/button_bg"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+                    android:id="@+id/btn_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/button_bg"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

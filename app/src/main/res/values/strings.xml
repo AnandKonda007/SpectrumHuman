@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">SpectrumHuman</string>
+    <string name="facebook_app_id">402158390200076</string>
+    <string name="fb_login_protocol_scheme">fb402158390200076</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="urinetest">Urine Test</string>
+    <string name="urinemsg">Simply test your urine samples"\n"with spectrum strips and our"\n"app will take care of the rest </string>
+    <string name="bloodtest">Blood Test</string>
+    <string name="bloodmsg">Test your blood samples"\n"with spectrum &amp; we will"\n"give accurate results</string>
+    <string name="teartest">Tear Test</string>
+    <string name="tearmsg">Take care of your eyes"\n"by testing your tears"\n"with spectrum strips</string>
+    <string name="salivatest">Saliva Test</string>
+    <string name="salivamsg">To know your health more"\n"accurately, Test your saliva "\n"samples with spectrum strips</string>
+    <string name="preganncytest">Pregnancy Test</string>
+    <string name="preganncymsg">Take care pregnancy test with"\n"spectrum strips, Our app will "\n"let you know your status</string>
+    <string name="sperutest">Sperm Test</string>
+    <string name="sperumsg">Take your sperm test"\n"with the spectrm to"\n"analyze your sperms</string>
+    <string name="watertest">Water Test</string>
+    <string name="watermsg">Test water with the "\n"spectrum,For your "\n"better health</string>
+    <string name="getstart">GET STARTED</string>
+    <!--sidemenu-->
+    <string name="sharedoctor">Are you sure you want "\n""\n"to share your report ?"</string>
+    <string name="nodoctor">There is no doctor added yet...</string>
+    <string name="nodoctor1">would you like to add a doctor?</string>
+    <string name="addmember">Add Member</string>
+    <string name="member">Members</string>
+    <string name="mydevice">My Device</string>
+    <string name="langage">Languages</string>
+    <string name="logout">Log Out</string>
+    <string name="changepsw">Change Password</string>
+    <string name="aboutus">About Us</string>
+    <string name="contactus">Contact Us</string>
+    <string name="addfamilydoctor">Family Doctor</string>
+    <string name="finddoctors">Find Doctor</string>
+    <string name="phone">Phone</string>
+    <string name="specilization">Specialization</string>
+    <string name="address">Address</string>
+    <!--Login-->
+    <string name="login">LOGIN</string>
+    <string name="emailphone">Email</string>
+    <string name="password">Password</string>
+    <string name="signup">SIGN UP</string>
+    <string name="or">Or</string>
+    <string name="ok">Ok</string>
+    <string name="register">REGISTER</string>
+    <string name="conformpassword">Confirm password</string>
+    <string name="forgot">FORGOT PASSWORD</string>
+    <string name="getpassword">GET PASSWORD</string>
+    <string name="newpassword">New Password</string>
+    <string name="changepassword">CHANGE PASSWORD</string>
+    <string name="oldpassword">Old Password</string>
+    <string name="done">DONE</string>
+    <string name="step1">Step 1</string>
+    <string name="step2">Step 2</string>
+    <string name="reactio">Waiting for 120 seconds for reaction to complete</string>
+    <!--home-->
+    <string name="testnow">Test Now</string>
+    <string name="recentresult">Recent Results</string>
+    <string name="editprofile">Edit Profile</string>
+    <string name="removeprofile">Remove Member</string>
+    <string name="cancel">Cancel</string>
+    <string name="removeuser">Do you want to remove member?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="exitapp">Do you want to Log out?</string>
+
+
+    <string name="skip">SKIP</string>
+    <string name="waitfor120">if you already waited for 120 seconds</string>
+    <string name="abort">ABORT</string>
+    <string name="step3">Step 3</string>
+    <string name="name">Name</string>
+    <string name="email">E-mail</string>
+    <string name="message">Message</string>
+    <string name="submit">Submit</string>
+    <string name="start">START</string>
+    <string name="resend">Resend</string>
+    <string name="verify">Verify</string>
+    <string name="addeddevices">Added Devices</string>
+    <string name="devicename">Device Name</string>
+    <string name="next">Next</string>
+    <string name="dowantanilizingtest">Do you want to stop analizing test?</string>
+    <string name="adddevice">Add Device</string>
+    <string name="lookingforavilabledevices">Looking for Available Devices</string>
+    <string name="seacrching">Searching....</string>
+    <string name="connecting">Connecting....</string>
+
+
+
+    <string name="specrtometer">Spectrometer</string>
+    <string name="device">  Device ID</string>
+    <string name="battery">Battery</string>
+    <string name="firmwearupdatwsw">Firmware Updates</string>
+    <string name="currentversion">Current Version:   v1.0.0</string>
+    <string name="Latestversion">Latest Version:   v2.0.0</string>
+    <string name="v1.0.0">v1.0.0</string>
+    <string name="v2.0.0">v2.0.0</string>
+    <string name="updating">Updating.....</string>
+    <string name="birth">Birthday</string>
+    <string name="relationship">Relationship</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="Bloodgroup">Blood Group</string>
+    <string name="savecontinue">Save&amp;Continue</string>
+    <string name="photo">Photo</string>
+    <string name="avilabledevices">Available Devices</string>
+    <string name="selecttest">Please Select Test</string>
+
+    <!--result page-->
+    <string name="chattext">Normal urine with trace amounts of glucose, qualitative test was negetive. Urine positive may be disease.
+</string>
+    <string name="charttwo">Related diseases: diabetes, liver disease, kidney disease, hyperthyroidism or cortisol increased disease, pheochrmocytoma and other endocrine diseases: pregnancy
+</string>
+    <string name="warning">Warning: continuous check results for the positive as soon as possible go to the hospital.</string>
+    <string name="sms_body"> urine Test Results!</string>
+    <string name="share_satus">Share the status :</string>
+    <!--calander-->
+    <string name="current_month_placeholder">January 1970</string>
+    <string name="previous_month_placeholder">&lt;&lt;</string>
+    <string name="Todat"></string>
+    <string-array name="days_array">
+        <item>S</item>
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+
+    </string-array>
+
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">v48TTDxHZhnYsCxZXWYtK8DHJ</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">CF2oLh4G3v6avaWldeD60cZtPdtle8Z2uhwK43b5AaYgxG02x5
+</string>
+
+
+</resources>

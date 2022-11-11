@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:id="@+id/rlone"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+
+            android:background="@color/material_stepper">
+
+            <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/addeddevice"
+                android:text="@string/addeddevices"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rllist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/rlone"
+            android:gravity="center">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_mydevice"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                android:scrollbars="vertical" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/rl_btn"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rllist">
+            <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+                android:id="@+id/btn_next"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_next_button"
+                android:text="Next"
+                android:layout_marginTop="45dp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+            </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_skip"
+            android:layout_below="@id/rl_btn">
+            <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Skip"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_marginTop="18dp"
+                android:textAllCaps="false"
+                android:textColor="@color/colortheam"
+                android:textSize="18sp" />
+            <View
+                android:layout_width="50dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:text="Skip"
+                android:layout_marginTop="39dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:background="@color/colortheam"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

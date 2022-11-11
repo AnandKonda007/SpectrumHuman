@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:id="@+id/relative_language"
+    android:layout_height="wrap_content">
+
+    <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+        android:layout_width="wrap_content"
+        android:text="@string/devicename"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textColor="#000000"
+        android:layout_marginTop="5dp"
+        android:id="@+id/devicename"
+        android:textSize="16sp"/>
+
+
+    <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+        android:layout_width="wrap_content"
+        android:text="@string/device"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/device"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/tick"
+        android:layout_width="25dp"
+        android:background="@drawable/check"
+        android:layout_height="25dp"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#cccccc"
+    android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+
+        <com.example.wave.spectrumhuman.FONTS.BoldTextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/step3"
+            android:id="@+id/step3"
+            android:textColor="@color/colortheam"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/animation"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/ic_analyze1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+             />
+
+        <com.example.wave.spectrumhuman.FONTS.BoldTextViewFontStyle
+            android:id="@+id/abort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:text="@string/abort"
+            android:textAllCaps="false"
+            android:textColor="@color/colortheam"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

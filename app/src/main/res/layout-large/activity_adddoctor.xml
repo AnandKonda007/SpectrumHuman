@@ -1,0 +1,398 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/rl_doctorImg"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/status"
+                android:layout_height="15dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/img_profile"
+                android:background="@drawable/ic_profiledefault"/>
+            <View
+                android:layout_width="85dp"
+                android:background="@color/colortheam"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:layout_height="1dp"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_steth"
+                android:layout_centerHorizontal="true"/>
+            <View
+                android:layout_width="80dp"
+                android:background="@color/colortheam"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="200dp"
+                android:layout_height="1dp"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/img_doctor"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/ic_doctorimg"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/txt_status"
+                android:layout_marginTop="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/ScrollView_register"
+        android:layout_width="fill_parent"
+        android:layout_height="640dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rl_doctorImg"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/l_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/toolbar"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/toolbar">
+
+                    <RelativeLayout
+                        android:id="@+id/rlone"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/toolbar"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/edit_cell">
+
+
+                        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                            android:id="@+id/textname"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/colorthickblue"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+
+                            android:text="@string/name"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite" />
+
+                        <com.example.wave.spectrumhuman.FONTS.EditTextFontStyle
+                            android:id="@+id/editname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toEndOf="@+id/textname"
+                            android:background="@android:color/transparent"
+                            android:imeOptions="actionDone"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rltwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/rlone"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/edit_cell">
+
+                        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                            android:id="@+id/textemail"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/colorthickblue"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            android:text="@string/email"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite" />
+
+                        <com.example.wave.spectrumhuman.FONTS.EditTextFontStyle
+                            android:id="@+id/contactusemail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_toEndOf="@+id/textemail"
+                            android:background="@android:color/transparent"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textSize="16sp"
+
+                            />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlthree"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/rltwo"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/edit_cell">
+
+                        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                            android:id="@+id/textphone"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/colorthickblue"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            android:text="@string/phone"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite" />
+
+                        <com.example.wave.spectrumhuman.FONTS.EditTextFontStyle
+                            android:id="@+id/editphone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_toEndOf="@+id/textphone"
+                            android:background="@android:color/transparent"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textSize="16sp" />
+
+
+                    </RelativeLayout>
+
+                    <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                        android:id="@+id/textspecilization"
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/rlthree"
+                        android:layout_marginLeft="20dp"
+                        android:background="@color/colorthickblue"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/specilization"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlfour"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/textspecilization"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edit_cell">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true">
+
+                            <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                                android:id="@+id/editspecilization"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:background="@android:color/transparent"
+                                android:gravity="center"
+                                android:text="ddfdfdfd"
+                                android:textColor="@color/colorBlack" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_downarrow"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="2dp"
+                            android:background="#9daccb">
+
+                            <Spinner
+                                android:id="@+id/spinner1"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/ic_downarrow">
+
+                            </Spinner>
+
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                        android:id="@+id/textaddress"
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/rlfour"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/colorthickblue"
+                        android:gravity="center"
+                        android:text="@string/address"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/addressbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_below="@id/textaddress"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edit_cell">
+
+                        <ScrollView
+                            android:id="@+id/ScrollView_register1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/toolbar"
+                            android:baselineAligned="false"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/LinearLayout1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/toolbar"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:id="@+id/l_main1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/toolbar"
+                                    android:orientation="vertical">
+
+                                    <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                                        android:id="@+id/edtaddress"
+                                        android:layout_width="230dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:background="#00ffffff"
+                                        android:paddingLeft="30dp" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </ScrollView>
+
+
+                        <Button
+                            android:id="@+id/picklocation"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="34dp"
+                            android:background="@drawable/ic_pick_location"
+                            android:onClick="findLocation" />
+
+                        <Button
+                            android:id="@+id/picklocation1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="34dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/ic_pick_location"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/addressbox"
+                        android:layout_marginTop="20dp">
+
+                        <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+                            android:id="@+id/submit"
+                            android:layout_width="150dp"
+                            android:layout_height="35dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/colorthickblue"
+                            android:text="Save"
+                            android:textAllCaps="false"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorWhite" />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+
+

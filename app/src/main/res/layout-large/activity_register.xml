@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+
+    <RelativeLayout
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+            android:layout_width="35dp"
+            android:id="@+id/back"
+            android:background="@drawable/ic_leftarrow"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="35dp" />
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/appicon" />
+    </RelativeLayout>
+
+    <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+        android:id="@+id/logintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="90dp"
+        android:text="@string/register"
+        android:textColor="@color/colorWhite"
+        android:textSize="30dp" />
+
+    <ScrollView
+        android:id="@+id/ScrollView_register"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/logintext"
+        android:layout_marginTop="15dp"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/l_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="30dp">
+
+                    <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:hint="@string/emailphone"
+                        android:text="@string/emailphone"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp"/>
+
+
+                    <com.example.wave.spectrumhuman.FONTS.EditTextFontStyle
+                        android:id="@+id/phoneoremail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"                        android:background="@android:color/transparent"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textColorHint="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="80dp"
+                        android:background="@color/colorWhite"
+                        android:paddingLeft="30dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_psw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_email"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp">
+
+                    <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:text="@string/password"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+
+                    <com.example.wave.spectrumhuman.FONTS.EditTextFontStyle
+                        android:id="@+id/password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:background="@android:color/transparent"
+                        android:inputType="textPassword"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textColorHint="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignRight="@id/password"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="55dp"
+                        android:id="@+id/imageshow"
+                        android:background="@drawable/ic_eye" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="80dp"
+                        android:background="@color/colorWhite" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_conformpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_email"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp">
+
+                    <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/conformpassword"
+                        android:text="@string/conformpassword"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+
+
+                    <com.example.wave.spectrumhuman.FONTS.EditTextFontStyle
+                        android:id="@+id/conformpassword"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:background="@android:color/transparent"
+                        android:inputType="textPassword"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textColorHint="@color/colorWhite"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignRight="@id/conformpassword"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="55dp"
+                        android:id="@+id/show_one"
+                        android:background="@drawable/ic_eye" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="80dp"
+                        android:background="@color/colorWhite" />
+
+                </RelativeLayout>
+
+
+
+
+                <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+                    android:id="@+id/signinbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/l2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/cell_shape"
+                    android:paddingBottom="2dp"
+                    android:text="@string/signup"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

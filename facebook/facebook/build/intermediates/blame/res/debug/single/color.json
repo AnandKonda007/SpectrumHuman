@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Androidprograms\\PromoSmartband\\facebook\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_button_text_color.xml",
+        "source": "D:\\Androidprograms\\PromoSmartband\\facebook\\src\\main\\res\\color\\com_facebook_button_text_color.xml"
+    },
+    {
+        "merged": "D:\\Androidprograms\\PromoSmartband\\facebook\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_send_button_text_color.xml",
+        "source": "D:\\Androidprograms\\PromoSmartband\\facebook\\src\\main\\res\\color\\com_facebook_send_button_text_color.xml"
+    }
+]

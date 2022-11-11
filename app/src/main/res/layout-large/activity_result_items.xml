@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:id="@+id/txt1"
+        android:focusableInTouchMode="false" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="5dp"
+        android:background="#cccccc"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="4dp"
+        android:layout_height="match_parent">
+
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:background="@color/colorLightGray"
+            android:focusableInTouchMode="false"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/img_icon"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:layout_marginLeft="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            />
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/testName"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginTop="10dp"
+            android:focusableInTouchMode="false"
+            />
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/testVal"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="80dp"
+            android:focusableInTouchMode="false"
+            />
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:id="@+id/testCondition"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="150dp"
+            android:focusableInTouchMode="false"
+            />
+        <Button
+            android:layout_width="15dp"
+            android:background="@drawable/ic_downarrow"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:id="@+id/btn_down"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_centerVertical="true"
+            android:layout_height="15dp" />
+        <Button
+            android:layout_width="15dp"
+            android:background="@drawable/ic_uparrow"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:id="@+id/btn_up"
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_height="15dp" />
+    </RelativeLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="4dp"
+        android:id="@+id/rl_msg"
+        android:visibility="gone"
+        android:layout_height="80dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="match_parent">
+                <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/chattext"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="60dp" />
+                <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:text="@string/charttwo"
+                    android:textColor="@color/colorBlack"
+
+                    android:layout_height="80dp" />
+                <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/warning"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="80dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true">
+
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:id="@+id/text_reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="would you like to continue with "
+            android:textColor="#6a6a6a"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            />
+    </RelativeLayout>
+
+    <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_name"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="45dp"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        />
+    <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_name1"
+        android:layout_below="@+id/text_name"
+        android:textSize="18dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/text_name1"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+                    android:id="@+id/btn_cancle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/no"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/button_bgpsw"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+                    android:id="@+id/btn_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/yes"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/otp_cornersresend"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

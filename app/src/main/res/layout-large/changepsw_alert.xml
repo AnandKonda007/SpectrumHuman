@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="350dp"
+    android:layout_height="250dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/lightgreen"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:background="@drawable/ic_check_add"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_height="25dp" />
+       <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+           android:layout_width="wrap_content"
+           android:text="Success"
+           android:textColor="@color/colorwhite"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="60dp"
+           android:textSize="18dp"
+           android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="25dp"
+            android:background="@drawable/ic_cancle"
+            android:layout_centerVertical="true"
+            android:id="@+id/btn_cancle"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_height="25dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="85dp"
+        android:layout_height="wrap_content">
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:text="Your Password has been changed."/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="160dp"
+        android:layout_height="wrap_content">
+        <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/ok"
+            android:id="@+id/btn_ok"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_bgpsw"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

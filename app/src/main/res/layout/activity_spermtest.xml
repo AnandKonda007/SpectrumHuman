@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg12">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/colorskyblue"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/ic_mainspermimage"
+            android:background="@drawable/greencircle"
+            android:layout_centerHorizontal="true"
+            />
+        <ImageView
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/img_sperm"
+            android:background="@drawable/ic_spermtest"
+            />
+        <com.example.wave.spectrumhuman.FONTS.BoldTextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sperutest"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorwhite"
+            android:id="@+id/testNameID"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            />
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sperumsg"
+            android:textColor="@color/colorwhite"
+            android:textSize="16dp"
+            android:id="@+id/testDescriptionID"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

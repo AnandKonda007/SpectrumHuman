@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="310dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp">
+
+        <com.example.wave.spectrumhuman.FONTS.BoldTextViewFontStyle
+            android:id="@+id/text_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Link Accounts"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorLightGray"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:id="@+id/close"
+            android:background="@drawable/cross"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="60dp">
+
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:id="@+id/emailText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#00ffffff"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorLightGray" />
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20sp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="This Mail has already spectrum account. Enter your Spectrum Password to link with this account"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorLightGray" />
+
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:id="@+id/password"
+    android:layout_marginTop="30dp"
+    android:layout_below="@id/relativeLayout"
+    android:layout_height="wrap_content">
+
+
+
+
+    <com.example.wave.spectrumhuman.FONTS.EditTextFontStyle
+        android:id="@+id/edit_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/transparent"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorLightGray"
+        android:textSize="18sp" />
+    <CheckBox
+        android:id="@+id/chk"
+        android:button="@drawable/linkcheckbox"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_width="30dp"
+        android:scaleX="0.70"
+        android:scaleY="0.70"
+        android:layout_marginTop="28dp"
+        android:layout_height="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorLightGray" />
+
+
+
+</RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:weightSum="2"
+    android:layout_marginTop="30dp"
+    android:layout_below="@id/password"
+    android:layout_height="40dp">
+    <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+        android:id="@+id/btn_forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#223559"
+        android:text="Forgot password ?"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:id="@+id/textView2"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+
+    <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+        android:id="@+id/btn_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#223559"
+        android:text="Sign in"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:background="@color/material_stepper"
+    android:layout_height="65dp">
+    <ImageView
+    android:id="@+id/tick"
+    android:layout_width="25dp"
+    android:background="@drawable/check"
+    android:layout_height="25dp"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="20dp" />
+    <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+        android:layout_width="wrap_content"
+        android:text="@string/devicename"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:textColor="#000000"
+        android:layout_marginTop="13dp"
+        android:id="@+id/devicename"
+        android:textSize="16sp"/>
+
+
+    <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+        android:layout_width="wrap_content"
+        android:text="@string/device"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="35dp"
+
+        android:id="@+id/device"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+
+    <ImageView
+    android:layout_width="14dp"
+    android:layout_height="14dp"
+    android:id="@+id/rightarrow"
+    android:background="@drawable/right"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="20dp" />
+</RelativeLayout>
+

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="310dp"
+    android:layout_height="250dp"
+    android:background="@drawable/layout_cornerbg"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+        <com.example.wave.spectrumhuman.FONTS.BoldTextViewFontStyle
+            android:id="@+id/text_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Password"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorLightGray"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="60dp">
+
+        <com.example.wave.spectrumhuman.FONTS.EditTextFontStyle
+            android:id="@+id/textViewemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#00ffffff"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorLightGray" />
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20sp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Your email is  already register with us using  social media,Kindly use Forget password option to create password for existed account"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorLightGray" />
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/relativeLayout"
+        android:layout_height="40dp">
+        <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+            android:id="@+id/btn_cancelregister"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="#223559"
+            android:text="Cancel"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:id="@+id/textView2"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+
+        <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+            android:id="@+id/btn_forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="#223559"
+            android:text="Forgot password ?"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

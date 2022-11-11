@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg1"
+    android:clickable="true"
+    android:id="@+id/relat"
+    android:focusableInTouchMode="true">
+
+
+    <RelativeLayout
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/appicon" />
+    </RelativeLayout>
+
+    <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+        android:id="@+id/logintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/login"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp" />
+
+    <ScrollView
+        android:id="@+id/ScrollView_register"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/logintext"
+        android:layout_marginTop="5dp"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/l_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="30dp">
+
+                    <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/emailphone"
+                        android:id="@+id/emailphone"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+
+                    <com.example.wave.spectrumhuman.FONTS.EditTextFontStyle
+                        android:id="@+id/editText_Email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:background="@android:color/transparent"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorLighttext"
+                        android:textColorHint="@color/colorWhite"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="50dp"
+                        android:background="@color/colorWhite"
+                        android:paddingLeft="30dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_psw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_email"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:text="@string/password"
+                        android:id="@+id/password"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+
+                    <com.example.wave.spectrumhuman.FONTS.EditTextFontStyle
+                        android:id="@+id/editText_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:background="@android:color/transparent"
+                        android:inputType="textPassword"
+                        android:paddingLeft="5dp"
+                        android:imeActionLabel="Done"
+                        android:singleLine="true"
+                        android:textColor="@color/colorLighttext"
+                        android:textColorHint="@color/colorWhite"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/chk"
+                        android:button="@drawable/checkbox"
+                        android:layout_alignRight="@id/editText_password"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="30dp"
+                        android:scaleX="0.70"
+                        android:scaleY="0.70"
+                        android:layout_marginTop="28dp"
+                        android:layout_height="20dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="50dp"
+                        android:background="@color/colorWhite" />
+
+                </RelativeLayout>
+
+                <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                    android:id="@+id/forgotpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Forgot password?"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp" />
+
+
+                <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+                    android:id="@+id/loginbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/l2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/cell_shape"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:id="@+id/img_id"/>
+
+                <RelativeLayout
+                    android:id="@+id/newaccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/loginbutton"
+                    android:layout_marginTop="17dp">
+
+                    <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                        android:id="@+id/signup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="Don't have account yet?"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp" />
+                   <!-- <View
+                        android:id="@+id/v1"
+                        android:layout_width="160dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/signup"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/colorWhite" />
+-->
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ScrollView_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/or"
+        android:id="@+id/or"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ScrollView_register"
+        android:layout_marginTop="40dp">
+
+        <View
+            android:id="@+id/view11"
+            android:layout_width="80dp"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite" />
+
+        <View
+            android:id="@+id/view12"
+            android:layout_width="80dp"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="35dp"
+            android:background="@color/colorWhite" />
+
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:id="@+id/text_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="Connect with"
+            android:textSize="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rl_view"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <!--<ImageButton
+            android:id="@+id/fb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_facebook" />-->
+        <Button
+            android:id="@+id/fb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_facebook" />
+        <!-- <ImageButton
+             android:id="@+id/twitter"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:layout_marginLeft="5dp"
+             android:layout_weight="1"
+             android:background="@drawable/ic_twitter" />-->
+        <Button
+            android:id="@+id/twitter_custom_button"
+            android:layout_width="40dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/ic_twitter"
+            android:layout_height="40dp" />
+
+        <ImageButton
+            android:id="@+id/google"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_google" />
+
+        <Button
+            android:id="@+id/weibo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_weibo" />
+
+        <Button
+            android:id="@+id/wechat"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/ic_wechat" />
+
+        <Button
+            android:id="@+id/qq"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_qq" />
+
+    </LinearLayout>
+
+</RelativeLayout>

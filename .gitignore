@@ -1,0 +1,24 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+# Project exclude paths
+/facebook/build/docs/
+/facebook/build/intermediates/blame/
+/facebook/build/intermediates/bundles/
+/facebook/build/intermediates/classes/
+/facebook/build/intermediates/classes/debug/
+/facebook/build/intermediates/incremental/
+/facebook/build/intermediates/incremental-safeguard/
+/facebook/build/intermediates/manifests/
+/facebook/build/intermediates/res/
+/facebook/build/intermediates/symbols/
+/facebook/build/libs/
+/facebook/build/outputs/
+/facebook/build/tmp/

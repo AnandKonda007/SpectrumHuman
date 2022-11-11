@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/colorpink"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:id="@+id/img_yellow"
+            android:background="@drawable/yellowcircle"
+            android:layout_marginTop="200dp"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="195dp"
+            android:background="@drawable/turquoisecircle"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/ic_urinetest"
+       />
+        <com.example.wave.spectrumhuman.FONTS.BoldTextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/urinetest"
+            android:textColor="@color/colorwhite"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="150dp"
+            />
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/urinemsg"
+            android:textColor="@color/colorwhite"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="70dp"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

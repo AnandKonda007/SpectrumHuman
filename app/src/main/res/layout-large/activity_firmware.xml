@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+
+        <RelativeLayout
+            android:id="@+id/devicename"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp">
+
+            <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/devicename"
+                android:textSize="17sp" />
+
+            <com.example.wave.spectrumhuman.FONTS.EditTextFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deviceedittext"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/transparent"
+                android:text="@string/specrtometer"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_listline_btm" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/devideid"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/devicename">
+
+            <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/device"
+                android:textSize="17sp" />
+
+            <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deviceeditid"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="85673456RDS"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_listline_btm" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/battery"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/devideid">
+
+            <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/battery"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/batterypercentage"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/ic_battery5"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/ic_listline_btm" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/firmwear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/battery">
+
+            <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/firmwearupdatwsw"
+                android:textSize="17sp" />
+
+            <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+                android:id="@+id/down"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_downarrow"
+                android:gravity="center" />
+            <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+                android:id="@+id/up"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                android:background="@drawable/ic_uparrow"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_listline_btm" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relativehide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/material_stepper"
+            android:visibility="gone"
+            android:layout_below="@id/firmwear">
+
+
+            <RelativeLayout
+                android:id="@+id/currentversion"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+                <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/currentversion"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/ic_listline_btm" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/latestversion"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/currentversion"
+                >
+
+                <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/Latestversion"
+                    android:textSize="17sp" />
+
+                <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+                    android:id="@+id/btn_update"
+                    android:layout_width="75dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/layout_border"
+                    android:gravity="center"
+                    android:text="Update"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/ic_listline_btm" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/latestversion"
+                android:layout_marginTop="50dp">
+
+                <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                    android:id="@+id/precenttext"
+                    android:layout_width="46dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/ic_textbg"
+                    android:text="0%"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/progressbar_updatedevice"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="50dp"
+                    android:progressDrawable="@drawable/progress_drawableforupdate"
+                    />
+                <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:text="@string/updating"
+                    android:id="@+id/update"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/progressbar_updatedevice"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_code"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/lightgreen">
+
+            <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                android:id="@+id/text_auth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorWhite"
+                android:text="Enter the authentication code"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <com.example.wave.spectrumhuman.FONTS.EditTextFontStyle
+            android:id="@+id/ed_code"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/otp_alert"
+            android:singleLine="true"
+            android:textSize="20dp"
+            android:textColor="@color/colorLightGray"
+            android:textAlignment="center" />
+
+        <RelativeLayout
+            android:id="@+id/rl_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.495"
+                    android:gravity="center_horizontal">
+
+                    <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+                        android:id="@+id/btn_resend"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/button_bgpsw"
+                        android:clickable="true"
+
+                        android:text="@string/resend"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffff" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.495"
+                    android:gravity="center_horizontal">
+
+                    <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+                        android:id="@+id/btn_verify"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/otp_cornersresend"
+                        android:clickable="true"
+
+                        android:text="@string/verify"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorWhite" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

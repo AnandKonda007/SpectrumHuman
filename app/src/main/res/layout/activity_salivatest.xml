@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg12"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorsaliva">
+
+        <ImageView
+            android:id="@+id/img_colorsiliva"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/turquoisecircle" />
+
+        <ImageView
+            android:id="@+id/img_silivameter"
+            android:layout_width="260dp"
+            android:layout_height="230dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/ic_salivatest" />
+
+        <com.example.wave.spectrumhuman.FONTS.BoldTextViewFontStyle
+            android:id="@+id/testNameID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:text="@string/salivatest"
+            android:textColor="@color/colorwhite"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:id="@+id/testDescriptionID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/salivamsg"
+            android:textColor="@color/colorwhite"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

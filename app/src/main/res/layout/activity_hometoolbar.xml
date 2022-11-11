@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="@drawable/bg2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="20dp"
+                android:id="@+id/toolbar_icon"
+                android:layout_centerVertical="true"
+                android:layout_height="20dp" />
+
+            <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:id="@+id/toolbar_text"
+                android:textSize="25sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+
+                android:layout_height="wrap_content" />
+            <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:id="@+id/text"
+                android:textSize="22sp"
+                android:layout_marginLeft="90dp"
+                android:layout_centerVertical="true"
+
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:id="@+id/img_graph"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="55dp"
+                android:layout_centerVertical="true"
+
+                android:layout_height="20dp" />
+            <ImageView
+                android:layout_width="20dp"
+                android:id="@+id/img_shop"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:layout_marginRight="15dp"
+                android:layout_height="20dp" />
+            <RelativeLayout
+                android:layout_width="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:id="@+id/relativeshare"
+                android:windowEnableSplitTouch="false"
+                android:splitMotionEvents="false"
+                android:layout_height="35dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:id="@+id/img_share"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="20dp" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:id="@+id/img_doctor"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:layout_marginRight="55dp"
+                android:layout_height="25dp" />
+            <ImageView
+                android:layout_width="40dp"
+                android:id="@+id/add_img"
+                android:layout_centerVertical="true"
+                android:layout_height="40dp" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>

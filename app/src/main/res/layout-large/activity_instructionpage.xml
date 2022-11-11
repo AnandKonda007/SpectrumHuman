@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+
+
+    <com.example.wave.spectrumhuman.FONTS.BoldTextViewFontStyle
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/step1"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorBlue"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/animation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:layout_height="450dp"
+        android:visibility="visible" />
+
+    <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+        android:layout_width="match_parent"
+        android:id="@+id/urinetext"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"/>
+
+    <com.example.wave.spectrumhuman.FONTS.BoldTextViewFontStyle
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="20dp"
+        android:textSize="22sp"
+        android:text="@string/skip"
+        android:textColor="@color/colorBlue"
+        android:id="@+id/skip"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+    <View
+        android:layout_width="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:background="@color/colorBlue"
+        android:layout_height="2dp"/>
+
+</RelativeLayout>
+</RelativeLayout>

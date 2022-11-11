@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <com.example.wave.spectrumhuman.FONTS.BoldTextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/step2"
+            android:id="@+id/step2"
+            android:textColor="@color/colortheam"
+            android:textSize="18sp" />
+
+
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="70dp"
+            android:id="@+id/waiting"
+            android:text="@string/reactio"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp">
+
+            <ImageView
+                android:id="@+id/animation"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp" />
+
+            <ProgressBar
+                android:layout_width="350dp"
+                android:id="@+id/progressbar_cir"
+                android:layout_marginLeft="100dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:rotation="270"
+                android:progressDrawable="@drawable/circular_progress"
+                android:max="50"
+                android:layout_height="350dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+                android:id="@+id/progress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colortheam"
+                android:text="120"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <com.example.wave.spectrumhuman.FONTS.BoldTextViewFontStyle
+            android:id="@+id/circularskip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/skip"
+            android:textColor="@color/colortheam"
+            android:textSize="18sp" />
+
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/circularskip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/allreadywaited"
+            android:text="@string/waitfor120"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

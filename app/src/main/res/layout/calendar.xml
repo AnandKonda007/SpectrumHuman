@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/calendar_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg2">
+
+        <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+            android:id="@+id/previous_month"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_left" />
+
+        <com.example.wave.spectrumhuman.FONTS.ButtonFontStyle
+            android:id="@+id/next_month"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_right" />
+
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:id="@+id/current_month"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/current_month_placeholder"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/calendar_days_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/calendar_header"
+        android:layout_gravity="center_horizontal"
+        android:numColumns="7"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:stretchMode="columnWidth"/>
+
+    <ViewSwitcher
+        android:id="@+id/calendar_switcher"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/calendar_days_grid"
+       >
+
+        <GridView
+            android:id="@+id/calendar_grid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="1dp"
+            android:numColumns="7"
+            android:fadingEdge="none"
+            android:stretchMode="columnWidth"
+            android:cacheColorHint="@android:color/transparent"
+            android:scrollingCache="false"
+            android:verticalSpacing="1dp" />
+    </ViewSwitcher>
+
+</RelativeLayout>

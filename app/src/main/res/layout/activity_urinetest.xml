@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg12">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/colorpink"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="220dp"
+            android:id="@+id/img_yellow"
+            android:background="@drawable/yellowcircle"
+            android:layout_marginTop="110dp"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:layout_width="210dp"
+            android:layout_height="200dp"
+            android:id="@+id/img_skyblue"
+            android:layout_marginTop="107dp"
+            android:background="@drawable/turquoisecircle"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:layout_width="290dp"
+            android:layout_height="230dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/img_stripinurinetest"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/ic_urinetest" />
+        <com.example.wave.spectrumhuman.FONTS.BoldTextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/urinetest"
+            android:id="@+id/testNameID"
+            android:textColor="@color/colorwhite"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp" />
+        <com.example.wave.spectrumhuman.FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorwhite"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="50dp"
+            android:textSize="16dp"
+            android:id="@+id/testDescriptionID"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+[
+    {
+        "outputFile": "D:\\Androidprograms\\PromoSmartband\\facebook\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v23\\values-v23.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 4,
+                    "endColumn": 12,
+                    "endOffset": 200
+                },
+                "from": {
+                    "file": "C:\\Users\\WAVE\\.android\\build-cache\\4ba74d7432955f674997446b0d4357937a1e74d5\\output\\res\\values-v23\\values-v23.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 4,
+                        "endColumn": 12,
+                        "endOffset": 200
+                    }
+                }
+            }
+        ]
+    }
+]
